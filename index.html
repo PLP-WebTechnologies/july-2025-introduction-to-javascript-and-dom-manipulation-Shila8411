@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 My Movie Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 My Movie Library</h1>
+    <p>Explore, rate, and add your favorite movies!</p>
+  </header>
+
+  <main>
+    <section class="card pink">
+      <h2>⭐ Rate a Movie</h2>
+      <label for="ratingInput">Enter rating (1-10):</label>
+      <input type="number" id="ratingInput" min="1" max="10">
+      <button id="checkRatingBtn">Check Rating</button>
+      <p id="ratingResult"></p>
+    </section>
+
+    <section class="card blue">
+      <h2>📽️ Movie Functions</h2>
+      <p>Total runtime of two movies: 
+        <span class="highlight-text" id="runtimeResult"></span> minutes
+      </p>
+      <p>Formatted movie title: 
+        <span class="highlight-text" id="formatTitle"></span>
+      </p>
+    </section>
+
+    <section class="card green">
+      <h2>🍿 Movie List</h2>
+      <ul id="movieList" class="movie-list"></ul>
+      <p id="countdown"></p>
+    </section>
+
+    <section class="card yellow">
+      <h2>🎞️ Interactive Movies</h2>
+      <button class="action-btn" id="toggleBtn">Highlight Featured Movie</button>
+      <p id="toggleText">This is a featured movie!</p>
+      <button class="action-btn" id="addMovieBtn">➕ Add New Movie</button>
+      <ul id="dynamicMovieList" class="movie-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for JavaScript practice</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
